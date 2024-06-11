@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://img.freepik.com/free-photo/free-photo-black-grunge-abstract-background-pattern-wallpaper_1340-34115.jpg') no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator:hover{
+    box-shadow: 1px 2px 15px rgba(255, 255, 255, 0.336);
+}
+
+#display {
+    width: 95%;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out, box-shadow 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ddd;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05) rotate(2deg);
+    color: #333;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    background-color: darkgrey;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
