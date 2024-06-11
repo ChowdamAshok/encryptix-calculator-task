@@ -19,3 +19,12 @@ function calculateResult() {
         display.value = 'Error';
     }
 }
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.body.classList.remove('loading');
+        document.querySelector('.loading-overlay').style.display = 'none';
+    }, 7000);
+});
+
+gsap.from('.heading',{opacity: 0, duration: 1, delay:1.5, y:30, stagger:0.2})
